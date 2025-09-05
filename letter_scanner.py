@@ -1,5 +1,6 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import tensorflow as tf
-import tensorflow_datasets as tfds
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -34,6 +35,6 @@ def predecir_letra(ruta_imagen):
     return letra_predicha
 
 
-letra = predecir_letra('./test/r.png')
+letra = predecir_letra('./test/h.png')
 print(f'La letra es: {letra}')
 
